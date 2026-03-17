@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本の自衛隊</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --r-background-color: #1a1a2e;
+            --r-main-font: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', sans-serif;
+            --r-main-font-size: 36px;
+            --r-main-color: #eee;
+            --r-heading-font: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', sans-serif;
+            --r-heading-color: #c0392b;
+            --r-heading-text-transform: none;
+            --r-link-color: #c9a84c;
+        }
+
+        .reveal {
+            font-family: var(--r-main-font);
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            font-family: var(--r-heading-font);
+            color: var(--r-heading-color);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .reveal h1 {
+            font-size: 2.2em;
+            font-weight: 900;
+        }
+
+        .reveal h2 {
+            font-size: 1.5em;
+            font-weight: 700;
+            border-bottom: 2px solid #c9a84c;
+            padding-bottom: 0.2em;
+            margin-bottom: 0.6em;
+        }
+
+        .reveal ruby {
+            ruby-align: center;
+        }
+
+        .reveal rt {
+            font-size: 0.6em;
+            color: #aaa;
+        }
+
+        .reveal ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .reveal li {
+            margin-bottom: 0.5em;
+            font-size: 0.95em;
+            padding-left: 1.2em;
+            position: relative;
+        }
+
+        .reveal li::before {
+            content: "▸";
+            color: #c9a84c;
+            position: absolute;
+            left: 0;
+        }
+
+        .reveal .title-slide h1 {
+            font-size: 2.6em;
+            margin-bottom: 0.1em;
+        }
+
+        .reveal .title-slide .subtitle {
+            font-size: 0.7em;
+            color: #c9a84c;
+            margin-top: 0.5em;
+        }
+
+        .reveal .title-slide .presenter {
+            font-size: 0.6em;
+            color: #999;
+            margin-top: 1.5em;
+        }
+
+        .reveal .section-divider {
+            color: #c9a84c;
+            font-size: 0.5em;
+            letter-spacing: 0.3em;
+            margin-bottom: 0.3em;
+        }
+
+        .reveal .branches {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6em;
+            align-items: center;
+        }
+
+        .reveal .branch-item {
+            background: rgba(255,255,255,0.05);
+            border-left: 4px solid #c0392b;
+            padding: 0.4em 1em;
+            border-radius: 4px;
+            width: 80%;
+            text-align: left;
+        }
+
+        .reveal .branch-item .branch-en {
+            font-size: 0.6em;
+            color: #888;
+        }
+
+        .reveal .question-slide h2 {
+            font-size: 2em;
+            border: none;
+            color: #c9a84c;
+        }
+
+        .reveal .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3em 2em;
+            font-size: 0.65em;
+            text-align: left;
+        }
+
+        .reveal .vocab-grid .vocab-cat {
+            grid-column: 1 / -1;
+            color: #c0392b;
+            font-weight: 700;
+            margin-top: 0.5em;
+            font-size: 1.1em;
+        }
+
+        .reveal .vocab-grid .vocab-cat:first-child {
+            margin-top: 0;
+        }
+
+        .reveal .vocab-item {
+            padding-left: 0;
+        }
+
+        .reveal .vocab-item::before {
+            display: none;
+        }
+
+        .reveal .gold {
+            color: #c9a84c;
+        }
+
+        .reveal .red {
+            color: #c0392b;
+        }
+
+        .reveal .small {
+            font-size: 0.65em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: Title -->
+            <section class="title-slide">
+                <h1>
+                    <ruby>日本<rt>にほん</rt></ruby>の<ruby>自衛隊<rt>じえいたい</rt></ruby>
+                </h1>
+                <div class="subtitle">Japan Self-Defense Forces</div>
+                <div class="presenter">
+                    Lexa &middot; 2026<ruby>年<rt>ねん</rt></ruby>3<ruby>月<rt>がつ</rt></ruby>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: Self-Introduction -->
+            <section>
+                <h2>
+                    <ruby>自己<rt>じこ</rt></ruby><ruby>紹介<rt>しょうかい</rt></ruby>
+                </h2>
+                <ul>
+                    <li>
+                        アメリカ<ruby>海兵隊<rt>かいへいたい</rt></ruby>（USMC）、2008–2012
+                    </li>
+                    <li>
+                        <ruby>歩兵<rt>ほへい</rt></ruby><ruby>部隊<rt>ぶたい</rt></ruby>の<ruby>通信<rt>つうしん</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>自衛隊<rt>じえいたい</rt></ruby>に<ruby>興味<rt>きょうみ</rt></ruby>があります
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 3: What is the JSDF? -->
+            <section>
+                <h2>
+                    <ruby>自衛隊<rt>じえいたい</rt></ruby>とは
+                </h2>
+                <ul>
+                    <li>
+                        <ruby>日本<rt>にほん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る<ruby>組織<rt>そしき</rt></ruby>です
+                    </li>
+                    <li>
+                        <ruby>憲法<rt>けんぽう</rt></ruby>：<ruby>防衛<rt>ぼうえい</rt></ruby>だけの<ruby>任務<rt>にんむ</rt></ruby>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 4: Three Branches -->
+            <section>
+                <h2>
+                    <ruby>三<rt>みっ</rt></ruby>つの<ruby>自衛隊<rt>じえいたい</rt></ruby>
+                </h2>
+                <div class="branches">
+                    <div class="branch-item">
+                        <ruby>陸上<rt>りくじょう</rt></ruby><ruby>自衛隊<rt>じえいたい</rt></ruby>
+                        <span class="branch-en">— Ground Self-Defense Force</span>
+                    </div>
+                    <div class="branch-item">
+                        <ruby>海上<rt>かいじょう</rt></ruby><ruby>自衛隊<rt>じえいたい</rt></ruby>
+                        <span class="branch-en">— Maritime Self-Defense Force</span>
+                    </div>
+                    <div class="branch-item">
+                        <ruby>航空<rt>こうくう</rt></ruby><ruby>自衛隊<rt>じえいたい</rt></ruby>
+                        <span class="branch-en">— Air Self-Defense Force</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: Mission Part 1 -->
+            <section>
+                <div class="section-divider"><ruby>任務<rt>にんむ</rt></ruby> ① </div>
+                <h2>
+                    <ruby>任務<rt>にんむ</rt></ruby>
+                </h2>
+                <ul>
+                    <li>
+                        <ruby>国<rt>くに</rt></ruby>の<ruby>防衛<rt>ぼうえい</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>離島<rt>りとう</rt></ruby>の<ruby>防衛<rt>ぼうえい</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>災害<rt>さいがい</rt></ruby>の<ruby>時<rt>とき</rt></ruby>、<ruby>助<rt>たす</rt></ruby>けます
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 6: Mission Part 2 -->
+            <section>
+                <div class="section-divider"><ruby>任務<rt>にんむ</rt></ruby> ②</div>
+                <h2>
+                    <ruby>協力<rt>きょうりょく</rt></ruby>と<ruby>近代化<rt>きんだいか</rt></ruby>
+                </h2>
+                <ul>
+                    <li>
+                        アメリカとの<ruby>協力<rt>きょうりょく</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>近代化<rt>きんだいか</rt></ruby>：サイバー、<ruby>宇宙<rt>うちゅう</rt></ruby>、<ruby>技術<rt>ぎじゅつ</rt></ruby>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 7: Infantry -->
+            <section>
+                <h2>
+                    <ruby>歩兵<rt>ほへい</rt></ruby>
+                </h2>
+                <ul>
+                    <li>
+                        <ruby>陸上<rt>りくじょう</rt></ruby>の<ruby>戦闘<rt>せんとう</rt></ruby><ruby>部隊<rt>ぶたい</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>水陸<rt>すいりく</rt></ruby><ruby>機動<rt>きどう</rt></ruby><ruby>団<rt>だん</rt></ruby>
+                        <span class="small">— Amphibious Rapid Deployment Brigade</span>
+                    </li>
+                    <li>
+                        <ruby>海兵隊<rt>かいへいたい</rt></ruby>との<ruby>訓練<rt>くんれん</rt></ruby>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 8: Communications -->
+            <section>
+                <h2>
+                    <ruby>通信<rt>つうしん</rt></ruby>
+                </h2>
+                <ul>
+                    <li>
+                        <ruby>通信<rt>つうしん</rt></ruby>システムは<ruby>大切<rt>たいせつ</rt></ruby>です
+                    </li>
+                    <li>
+                        <ruby>共同<rt>きょうどう</rt></ruby><ruby>作戦<rt>さくせん</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>情報<rt>じょうほう</rt></ruby>の<ruby>共有<rt>きょうゆう</rt></ruby>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 9: AI and JSDF Part 1 -->
+            <section>
+                <div class="section-divider">AIと<ruby>自衛隊<rt>じえいたい</rt></ruby> ①</div>
+                <h2>
+                    AIと<ruby>自衛隊<rt>じえいたい</rt></ruby>
+                </h2>
+                <ul>
+                    <li>
+                        <ruby>先進<rt>せんしん</rt></ruby><ruby>技術<rt>ぎじゅつ</rt></ruby>で<ruby>国<rt>くに</rt></ruby>を<ruby>守<rt>まも</rt></ruby>ります
+                    </li>
+                    <li>
+                        <ruby>速<rt>はや</rt></ruby>い<ruby>意思<rt>いし</rt></ruby><ruby>決定<rt>けってい</rt></ruby>
+                    </li>
+                    <li>
+                        データ<ruby>分析<rt>ぶんせき</rt></ruby>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 10: AI and JSDF Part 2 -->
+            <section>
+                <div class="section-divider">AIと<ruby>自衛隊<rt>じえいたい</rt></ruby> ②</div>
+                <h2>
+                    <ruby>未来<rt>みらい</rt></ruby>の<ruby>自衛隊<rt>じえいたい</rt></ruby>
+                </h2>
+                <ul>
+                    <li>
+                        <ruby>物流<rt>ぶつりゅう</rt></ruby>と<ruby>災害<rt>さいがい</rt></ruby><ruby>対応<rt>たいおう</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>人間<rt>にんげん</rt></ruby>とAIの<ruby>協力<rt>きょうりょく</rt></ruby>
+                    </li>
+                    <li>
+                        <ruby>自衛隊<rt>じえいたい</rt></ruby>の<ruby>未来<rt>みらい</rt></ruby>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 11: Conclusion -->
+            <section>
+                <h2>まとめ</h2>
+                <ul>
+                    <li>
+                        <ruby>自衛隊<rt>じえいたい</rt></ruby>は<ruby>変<rt>か</rt></ruby>わります
+                    </li>
+                    <li>
+                        <ruby>情報<rt>じょうほう</rt></ruby>と<ruby>技術<rt>ぎじゅつ</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>です
+                    </li>
+                    <li>
+                        <ruby>日本<rt>にほん</rt></ruby>の<ruby>防衛<rt>ぼうえい</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶのは おもしろいと<ruby>思<rt>おも</rt></ruby>います
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SLIDE 12: Questions -->
+            <section class="question-slide">
+                <h2>
+                    ご<ruby>質問<rt>しつもん</rt></ruby>は？
+                </h2>
+            </section>
+
+            <!-- SLIDE 13: Vocabulary Reference -->
+            <section>
+                <h2>
+                    <ruby>語彙<rt>ごい</rt></ruby>リスト
+                </h2>
+                <div class="vocab-grid">
+                    <div class="vocab-cat"><ruby>一般<rt>いっぱん</rt></ruby></div>
+                    <li class="vocab-item"><ruby>自衛隊<rt>じえいたい</rt></ruby> — Self-Defense Forces</li>
+                    <li class="vocab-item"><ruby>防衛<rt>ぼうえい</rt></ruby> — defense</li>
+                    <li class="vocab-item"><ruby>任務<rt>にんむ</rt></ruby> — mission</li>
+                    <li class="vocab-item"><ruby>憲法<rt>けんぽう</rt></ruby> — constitution</li>
+                    <li class="vocab-item"><ruby>近代化<rt>きんだいか</rt></ruby> — modernization</li>
+                    <li class="vocab-item"><ruby>技術<rt>ぎじゅつ</rt></ruby> — technology</li>
+
+                    <div class="vocab-cat"><ruby>軍事<rt>ぐんじ</rt></ruby></div>
+                    <li class="vocab-item"><ruby>海兵隊<rt>かいへいたい</rt></ruby> — Marine Corps</li>
+                    <li class="vocab-item"><ruby>歩兵<rt>ほへい</rt></ruby> — infantry</li>
+                    <li class="vocab-item"><ruby>通信<rt>つうしん</rt></ruby> — communications</li>
+                    <li class="vocab-item"><ruby>作戦<rt>さくせん</rt></ruby> — operation</li>
+                    <li class="vocab-item"><ruby>訓練<rt>くんれん</rt></ruby> — training</li>
+                    <li class="vocab-item"><ruby>情報<rt>じょうほう</rt></ruby> — information</li>
+
+                    <div class="vocab-cat"><ruby>災害<rt>さいがい</rt></ruby>・AI</div>
+                    <li class="vocab-item"><ruby>災害<rt>さいがい</rt></ruby> — disaster</li>
+                    <li class="vocab-item"><ruby>離島<rt>りとう</rt></ruby> — remote island</li>
+                    <li class="vocab-item"><ruby>人工<rt>じんこう</rt></ruby><ruby>知能<rt>ちのう</rt></ruby> — AI</li>
+                    <li class="vocab-item"><ruby>意思<rt>いし</rt></ruby><ruby>決定<rt>けってい</rt></ruby> — decision-making</li>
+                    <li class="vocab-item"><ruby>物流<rt>ぶつりゅう</rt></ruby> — logistics</li>
+                    <li class="vocab-item"><ruby>連携<rt>れんけい</rt></ruby> — coordination</li>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'fade',
+            transitionSpeed: 'slow',
+            width: 1280,
+            height: 720,
+            margin: 0.1,
+            center: true
+        });
+    </script>
+</body>
+</html>
