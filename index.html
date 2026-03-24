@@ -169,6 +169,46 @@
             color: #666;
             margin-left: 0.5em;
         }
+
+        .reveal .bg-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .reveal .bg-slide .bg-overlay {
+            background: rgba(26, 26, 46, 0.75);
+            padding: 1em;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .reveal .slide-img {
+            max-height: 200px;
+            border-radius: 6px;
+            border: 2px solid rgba(192, 57, 43, 0.4);
+            margin-top: 0.4em;
+        }
+
+        .reveal .branch-item img {
+            height: 60px;
+            border-radius: 4px;
+            float: right;
+            margin-left: 0.5em;
+            border: 1px solid rgba(192, 57, 43, 0.3);
+        }
+
+        .reveal .img-row {
+            display: flex;
+            justify-content: center;
+            gap: 0.5em;
+            margin-top: 0.5em;
+        }
+
+        .reveal .img-row img {
+            max-height: 160px;
+            border-radius: 6px;
+            border: 2px solid rgba(192, 57, 43, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -176,7 +216,7 @@
         <div class="slides">
 
             <!-- SLIDE 1: Title -->
-            <section class="title-slide">
+            <section class="title-slide bg-slide" data-background-image="https://upload.wikimedia.org/wikipedia/commons/2/22/11_03_032_R_%E8%87%AA%E8%A1%9B%E9%9A%8A%E8%A8%98%E5%BF%B5%E6%97%A5_%E8%A6%B3%E9%96%B2%E5%BC%8F%28Parade_of_Self-Defense_Force%29_72.jpg" data-background-opacity="0.3">
                 <h1>
                     <ruby>日本<rt>にほん</rt></ruby>の<ruby>自衛隊<rt>じえいたい</rt></ruby>
                 </h1>
@@ -231,14 +271,17 @@
                 </h2>
                 <div class="branches">
                     <div class="branch-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/11_11_018_R_%E8%87%AA%E8%A1%9B%E9%9A%8A%E8%A8%98%E5%BF%B5%E6%97%A5_%E8%A6%B3%E9%96%B2%E5%BC%8F%28Parade_of_Self-Defense_Force%29_83.jpg" alt="JGSDF">
                         <ruby>陸上<rt>りくじょう</rt></ruby><ruby>自衛隊<rt>じえいたい</rt></ruby>
                         <span class="branch-en">— Ground Self-Defense Force</span>
                     </div>
                     <div class="branch-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/170730-N-QV906-002_USNS_Tippecanoe_%28T-AO-199%29_conducts_replenishment_at_sea_operations_with_JMSDF_JS_Izumo_%28DDH-183%29_and_JS_Sazanami_%28DD-113%29.jpg" alt="JMSDF">
                         <ruby>海上<rt>かいじょう</rt></ruby><ruby>自衛隊<rt>じえいたい</rt></ruby>
                         <span class="branch-en">— Maritime Self-Defense Force</span>
                     </div>
                     <div class="branch-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/JASDF_F-15_Fighter.jpg" alt="JASDF">
                         <ruby>航空<rt>こうくう</rt></ruby><ruby>自衛隊<rt>じえいたい</rt></ruby>
                         <span class="branch-en">— Air Self-Defense Force</span>
                     </div>
@@ -246,7 +289,7 @@
             </section>
 
             <!-- SLIDE 5: Mission Part 1 -->
-            <section>
+            <section data-background-image="https://upload.wikimedia.org/wikipedia/commons/f/fc/23.3.12_%E9%83%A1%E5%B1%B1%EF%BC%9A%E6%B0%B4%E9%81%93%E6%B0%B4%E8%BC%B8%E9%80%81%E6%94%AF%E6%8F%B4%EF%BC%89%E2%91%A0_%E6%9D%B1%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%9C%87%E7%81%BD%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%81%BD%E5%AE%B3%E6%B4%BE%E9%81%A3%E6%B4%BB%E5%8B%95_81.jpg" data-background-opacity="0.2">
                 <div class="section-divider"><ruby>任務<rt>にんむ</rt></ruby> ① </div>
                 <h2>
                     <ruby>任務<rt>にんむ</rt></ruby>
@@ -286,7 +329,7 @@
             </section>
 
             <!-- SLIDE 7: Infantry -->
-            <section>
+            <section data-background-image="https://upload.wikimedia.org/wikipedia/commons/3/38/Amphibious_operations_during_the_SDF_Joint_Exercise_2023%EF%BC%88FTX%EF%BC%89_06.jpg" data-background-opacity="0.2">
                 <h2>
                     <ruby>歩兵<rt>ほへい</rt></ruby>
                 </h2>
@@ -328,7 +371,7 @@
             </section>
 
             <!-- SLIDE 9: AI and JSDF Part 1 -->
-            <section>
+            <section data-background-image="https://upload.wikimedia.org/wikipedia/commons/7/74/JGSDF_Type_10_tank_front_view.jpg" data-background-opacity="0.15">
                 <div class="section-divider">AIと<ruby>自衛隊<rt>じえいたい</rt></ruby> ①</div>
                 <h2>
                     AIと<ruby>自衛隊<rt>じえいたい</rt></ruby>
